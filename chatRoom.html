@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script src="ChatRoom.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3">
+                <div class="card" style="height: 500px;">
+                    <div class="card-header" style="height: 12%; display: flex; align-items: center;">
+                        <div class="md-form md-outline input-with-post-icon" style="margin: 0;">
+                            <i class="fas fa-search  input-prefix"></i>
+                            <input type="text" id="prefixInside2" class="form-control" style="margin: 2px;">
+                            <label for="prefixInside2" style="margin: 0;">Search</label>
+                        </div>
+                    </div>
+                    <div style="height: 85%;">
+                        <div class="list-group" style="height: 100%;">
+                            <div class="list-group-item" style="cursor: pointer; display: flex; height: 20%" onclick="">
+                                <div style="width: 30%; display: flex;align-items: center;">
+                                    <div class="rounded-circle"
+                                        style="width: 100%; padding-bottom: 100%; background-image: url(./images/Andy.jpg);background-position: center; background-size: cover;">
+                                    </div>
+                                </div>
+                                <div style="width: 70%;">
+                                    <div style="padding-left: 15%;">
+                                        <span style="font-size: 20px; font-weight: bold;">Andy</span>
+                                    </div>
+                                    <div style="font-size: 10px; padding-left: 15%;">
+                                        <p>I Love You</p>
+                                    </div>
+                                </div>
+                                <!-- <p class="mb-0"><i class="far fa-image fa-2x mr-4 grey p-3 white-text rounded-circle " aria-hidden="true"></i>Photos</p> -->
+                            </div>
+                            <div class="list-group-item">
+                                <p class="mb-0"> <i
+                                        class="fas fa-briefcase fa-2x mr-4 mr-4 grey p-3 white-text rounded-circle"
+                                        aria-hidden="true"></i>Work</p>
+                            </div>
+                            <div class="list-group-item">
+                                <p class="mb-0"><i
+                                        class="fas fa-anchor fa-2x mr-4 mr-4 grey p-3 white-text rounded-circle"
+                                        aria-hidden="true"></i>Vacation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="card" style="height: 500px; display: flex;">
+                    <div style="height: 20%; display: flex;">
+                        <div style="width: 40%; display: flex; padding: 10px 10px;">
+                            <div style="width: 20%; display: flex;align-items: center;">
+                                <div class="rounded-circle"
+                                    style="width: 100%; padding-bottom: 100%; background-image: url(./images/Andy.jpg);background-position: center; background-size: cover;">
+                                </div>
+                            </div>
+                            <div style="width: 80%;">
+                                <div style="padding-left: 15%;">
+                                    <span style="font-size: 20px; font-weight: bold;">Andy</span>
+                                </div>
+                                <div style="font-size: 10px; padding-left: 15%;">
+                                    <p>I Love You</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div style="width: 60%; display: flex; justify-content: flex-end; padding-top: 10px;">
+                            <i class="fas fa-video" style="margin-right: 30px;"></i>
+                            <i class="fas fa-phone" style="margin-right: 30px;"></i>
+                            <i class="fas fa-ellipsis-v" style="margin-right: 30px;"></i>
+                        </div>
+                    </div>
+                    <hr>
+                    <div style="height: 60%; overflow-y: scroll;" id="messageDisplayArea">
+                        <div style="display: flex; justify-content: flex-start; margin: 20px; color: white;">
+                            <div style="background-color: darkgrey; max-width: 60%; border-radius: 8px; padding: 20px;">
+                                Deserunt et in ipsum minim exercitation ex non. Elit nulla adipisicing aute quis. Quis
+                                ipsum
+                                incididunt fugiat quis velit nulla duis velit commodo voluptate exercitation excepteur.
+                                Proident laboris dolore elit duis aliqua ea proident. Ad sunt adipisicing excepteur
+                                veniam
+                                amet id enim duis sit qui exercitation. Est id duis mollit ex sit ea laboris nulla velit
+                                id
+                                ex laborum.
+                            </div>
+                        </div>
+                        <div style="display: flex; justify-content: flex-end; margin: 20px; color: white;">
+                            <div
+                                style="background-color: rgb(179, 93, 93); max-width: 60%; border-radius: 8px; padding: 20px;">
+                                Deserunt et in ipsum minim exercitation ex non. Elit nulla adipisicing aute quis. Quis
+                                ipsum
+                                incididunt fugiat quis velit nulla duis velit commodo voluptate exercitation excepteur.
+                                Proident laboris dolore elit duis aliqua ea proident. Ad sunt adipisicing excepteur
+                                veniam
+                                amet id enim duis sit qui exercitation. Est id duis mollit ex sit ea laboris nulla velit
+                                id
+                                ex laborum.
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div style="height: 20%; display: flex;">
+
+                        <div class="input-group">
+                            <button type="button" class="btn btn-outline-info" onclick="send(0)"><i class="fas fa-grin-tongue-wink fa-3x"
+                                    aria-hidden="true"></i></button>
+                            <textarea class="form-control" id="message" rows="3" ></textarea>
+                            <button type="button" class="btn btn-outline-info" onclick="send(1)"><i class="fas fa-paper-plane fa-3x"
+                                    aria-hidden="true" ></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
