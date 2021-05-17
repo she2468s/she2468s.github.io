@@ -10,36 +10,36 @@
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/mdb.min.js"></script>
-    <script src="ChatRoom.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/mdb.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-messaging.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-messaging.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
+    <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
 
-<script>
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
-    apiKey: "AIzaSyDZ88lZGpin2oTYGqO8YtTPqGZIcxWOgpA",
-    authDomain: "chatroom-4bbe7.firebaseapp.com",
-    projectId: "chatroom-4bbe7",
-    storageBucket: "chatroom-4bbe7.appspot.com",
-    messagingSenderId: "507339669544",
-    appId: "1:507339669544:web:be474138d40ee4e83c751d",
-    measurementId: "G-GRPWQ12LGT"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyDZ88lZGpin2oTYGqO8YtTPqGZIcxWOgpA",
+            authDomain: "chatroom-4bbe7.firebaseapp.com",
+            projectId: "chatroom-4bbe7",
+            storageBucket: "chatroom-4bbe7.appspot.com",
+            messagingSenderId: "507339669544",
+            appId: "1:507339669544:web:be474138d40ee4e83c751d",
+            measurementId: "G-GRPWQ12LGT"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <script src="ChatRoom.js"></script>
 
 </head>
 
@@ -145,11 +145,11 @@
                     <div style="height: 20%; display: flex;">
 
                         <div class="input-group">
-                            <button type="button" class="btn btn-outline-info" onclick="send(0)"><i class="fas fa-grin-tongue-wink fa-3x"
-                                    aria-hidden="true"></i></button>
-                            <textarea class="form-control" id="message" rows="3" ></textarea>
-                            <button type="button" class="btn btn-outline-info" onclick="send(1)"><i class="fas fa-paper-plane fa-3x"
-                                    aria-hidden="true" ></i></button>
+                            <button type="button" class="btn btn-outline-info" onclick="send(0)"><i
+                                    class="fas fa-grin-tongue-wink fa-3x" aria-hidden="true"></i></button>
+                            <textarea class="form-control" id="message" rows="3"></textarea>
+                            <button type="button" class="btn btn-outline-info" onclick="send(1)"><i
+                                    class="fas fa-paper-plane fa-3x" aria-hidden="true"></i></button>
                         </div>
                     </div>
                 </div>
